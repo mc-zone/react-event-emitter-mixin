@@ -1,0 +1,17 @@
+{
+  "name": "react-event-emitter-mixin",
+  "version": "1.0.0",
+  "description": "react event emitter mixin",
+  "main": "EventEmitterMixin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "event",
+    "emitter"
+  ],
+  "author": "mc-zone",
+  "license": "MIT"
+}
