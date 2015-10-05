@@ -2,7 +2,14 @@
 Custom event utilities with lifecycle maintenance for react (both react and react-native)
 
 
+##Getting Started
+Install via npm
+```bash
+npm i react-event-emitter-mixin --save-dev
+```
+
 ##Useage
+Communicate between components under event emitter.
 ```javascript
 var EventEmitterMixin = require('react-event-emitter-mixin');
 
