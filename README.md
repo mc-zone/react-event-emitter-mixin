@@ -2,13 +2,13 @@
 Custom event utilities with lifecycle maintenance for react (both react and react-native)
 
 
-##Getting Started
+## Getting Started
 Install via npm
 ```bash
 npm i react-event-emitter-mixin --save-dev
 ```
 
-##Useage
+## Useage
 Communicate between components under event emitter.
 ```javascript
 var EventEmitterMixin = require('react-event-emitter-mixin');
@@ -51,7 +51,7 @@ var Parent = React.createClass({
 ```
 
 
-##Lifecycle maintenance
+## Lifecycle maintenance
 Auto clean listeners when components be unmounted.
 ```javascript
 var Child = React.createClass({
@@ -104,7 +104,7 @@ var Parent = React.createClass({
 ```
 
 
-##API
+## API
 ```javascript
 //Add event listener
 this.eventEmitter('on', eventName:string, callback:function);
@@ -119,8 +119,8 @@ this.eventEmitter('off', eventName:string, callback:function, shouldRemoveAll:Bo
 this.eventEmitter('emit', eventName:string [,data1 [,data2,...] ] );
 ```
 
-##LICENSE
+## LICENSE
 MIT.
 
 
-##Welcome PR :)
+## Welcome PR :)
