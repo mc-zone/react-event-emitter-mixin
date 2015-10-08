@@ -4,11 +4,12 @@ var GLOBAL = typeof window === 'undefined' ? global : window;
 
 var _events = GLOBAL.EVENT_EMITTER = {};
 
+var _signCnt = 0;
 
 var EventEmitter = {
     mount(){
         this._eventIncluded = [];
-        this._eventSign = '_eventTag' + Date.now() + ~~(1000*Math.random());
+        this._eventSign = '_eventTag_' + (_signCnt++);
     },
     unmount(){
         this._eventIncluded.forEach(event => delete _events[event][this._eventSign]);

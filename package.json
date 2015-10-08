@@ -1,6 +1,6 @@
 {
   "name": "react-event-emitter-mixin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "react event emitter mixin",
   "main": "EventEmitterMixin.js",
   "scripts": {

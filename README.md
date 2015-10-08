@@ -113,7 +113,7 @@ this.eventEmitter('on', eventName:string, callback:function);
 this.eventEmitter('one', eventName:string, callback:function);
 
 //Remove event listeners which come from current component (or remove all)
-this.eventEmitter('off', eventName:string, callback:function, shouldRemoveAll:Boolean);
+this.eventEmitter('off', eventName:string, callback:function [,shouldRemoveAll:Boolean] );
 
 //Emit event 
 this.eventEmitter('emit', eventName:string [,data1 [,data2,...] ] );
