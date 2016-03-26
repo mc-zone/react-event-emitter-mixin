@@ -1,4 +1,5 @@
-# react-event-emitter-mixin
+# react-event-emitter-mixin [![Build Status](https://travis-ci.org/mc-zone/react-event-emitter-mixin.svg?branch=master)](https://travis-ci.org/mc-zone/react-event-emitter-mixin/) [![npm version](https://badge.fury.io/js/react-event-emitter-mixin.svg)](http://badge.fury.io/js/react-event-emitter-mixin)
+
 Custom event utilities with lifecycle maintenance for react (both react and react-native)
 
 
