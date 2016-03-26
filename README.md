@@ -5,7 +5,7 @@ Custom event utilities with lifecycle maintenance for react (both react and reac
 ## Getting Started
 Install via npm
 ```bash
-npm i react-event-emitter-mixin --save-dev
+npm i react-event-emitter-mixin --save
 ```
 
 ## Useage
@@ -15,7 +15,6 @@ var EventEmitterMixin = require('react-event-emitter-mixin');
 
 var Child = React.createClass({
     mixins:[EventEmitterMixin],
-    name:'child',
     render(){
         return (
             <View>
@@ -32,11 +31,10 @@ var Child = React.createClass({
 });
 var Parent = React.createClass({
     mixins:[EventEmitterMixin],
-    name:'parent',
     componentWillMount(){
         this.eventEmitter('on','eventA',(a,b)=>{
-            alert(this.name); //'parent'
-            alert(a+b); //'foobar'
+            alert(a); //'foo'
+            alert(b); //'bar'
         });
     },
     render(){
@@ -49,6 +47,7 @@ var Parent = React.createClass({
 });
 
 ```
+Same usage when you are using ReactJs on Web.
 
 
 ## Lifecycle maintenance
