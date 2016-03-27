@@ -1,17 +1,13 @@
 var path = require('path');
 var gulp = require('gulp');
 var babel = require("gulp-babel");
-var rename = require("gulp-rename");
-var shell = require("gulp-shell");
 
 
-gulp.task('default', function() {
+gulp.task('build', function() {
   var source = path.resolve(__dirname, './src/index.js');
-  var output = path.resolve(__dirname, './');
+  var output = path.resolve(__dirname, './dist/');
 
   gulp.src(source)
     .pipe(babel())
-    .pipe(rename('EventEmitterMixin.js'))
     .pipe(gulp.dest(output))
-    .pipe(shell('npm test'))
 });

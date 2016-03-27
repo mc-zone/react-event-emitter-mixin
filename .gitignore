@@ -1,3 +1,10 @@
+#MAC OS X
+__MACOSX
+.DS_Store
+
+# release
+dist/
+
 # Vim
 *.swp
 ~*
@@ -5,6 +12,7 @@
 # Logs
 logs
 *.log
+npm-debug.log
 
 # Runtime data
 pids
