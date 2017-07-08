@@ -1,6 +1,7 @@
 {
-  "presets": ["es2015"],
-  "only": [
-    "src/**.js"
-  ]  
+  "presets": [
+    ["es2015", {
+      "modules":false
+    }]
+  ]
 }

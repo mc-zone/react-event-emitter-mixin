@@ -1,6 +1,6 @@
-jest.unmock('../index'); 
+jest.unmock('../'); 
 
-var EventEmitterMixin = require('../index');
+var EventEmitterMixin = require('../');
 
 describe('Event listener and emitter test', function(){
   var ComponentA = Object.create(EventEmitterMixin);
